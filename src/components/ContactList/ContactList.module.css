@@ -1,0 +1,44 @@
+.list {
+    width: 300px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    margin-left: 4px;
+    color: white;
+    background-color: gray;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.empty {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.table {
+    border: 1px solid #2a2a2a;
+    border-collapse: collapse;
+}
+
+.thead {
+
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+}
+
+.data {
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+}
