@@ -4,7 +4,7 @@ import { getContacts } from '../../redux/contactsSlice';
 import { addContact } from '../../redux/AsyncRedux'
 import { useSelector, useDispatch } from 'react-redux';
 import Notiflix from 'notiflix';
-import styles from "./ContactForm.module.css";
+import s from "./ContactForm.module.css";
 
 export default function ContactForm() {
     const [name, setName] = useState('');
@@ -59,11 +59,11 @@ export default function ContactForm() {
     const numberId = nanoid();
 
     return (
-        <form className={styles.form} onSubmit={handleSubmit}>
-            <label className={styles.label} htmlFor={nameId}>
+        <form className={s.form} onSubmit={handleSubmit}>
+            <label className={s.label} htmlFor={nameId}>
                 Name
                 <input
-                    className={styles.input}
+                    className={s.input}
                     type="text"
                     name="name"
                     value={name}
@@ -71,10 +71,10 @@ export default function ContactForm() {
                     placeholder="Input name"
                 />
             </label>
-            <label className={styles.label} htmlFor={numberId}>
+            <label className={s.label} htmlFor={numberId}>
                 Number
                 <input
-                    className={styles.input}
+                    className={s.input}
                     type="tel"
                     name="number"
                     value={number}
@@ -85,7 +85,7 @@ export default function ContactForm() {
                     required
                 />
             </label>
-            <button className={styles.button} type="submit">
+            <button className={s.button} type="submit">
                 Add contact
             </button>
         </form>
